@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { AddCategory } from "./Components/AddCategory";
-import { GifGrid } from "./Components/GifGrid";
+import { AddCategory, GifGrid } from "./Components";
 
 export const  GifExpertApp = () => {
   // eslint-disable-next-line no-unused-vars
@@ -12,11 +11,8 @@ export const  GifExpertApp = () => {
 
   return (
     <>
-      {/* TITULO */}
       <h1>GifExpertApp</h1>
-      {/* Input */}
       <AddCategory
-        //setCategories = { setCategories }
         onNewCategory = { onAddCategory }
       />
       
